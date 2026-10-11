@@ -1,0 +1,50 @@
+:root {
+  --bg: #0b1020;
+  --panel: hsl(223, 44%, 13%);
+  --panel-light: #18233b;
+  --text: #f1eee9;
+  --muted: #a5b0c8;
+  --accent: #f7b84b;
+  --accent-2: #7c8cff;
+  --border: rgba(66, 30, 210, 0.09);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+  text-align: center;
+}
+
+h2{
+  color: white;
+}
+span{
+  color: var(--accent);
+}
+
+.projects { padding-top: 65px; }
+.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.project-card { overflow: hidden; border: 1px solid var(--border); border-radius: 15px; background: var(--panel); transition: transform .2s, border-color .2s; }
+.project-card:hover { transform: translateY(-5px); border-color: rgba(253, 253, 255, 0.532); }
+.project-preview { min-height: 190px; display: grid; place-items: center; background: #192b49; padding: 25px; }
+.preview-two { background: linear-gradient(135deg, #1e3654, #3c4268); }
+.mini-window { width: 175px; padding: 14px; border-radius: 9px; background: #f4f5fa; box-shadow: 0 12px 25px #0003; }
+.mini-window > span { width: 6px; height: 6px; margin-right: 3px; }
+.mini-title { height: 10px; width: 70%; background: #283452; border-radius: 3px; margin: 14px 0 10px; }
+.mini-line { height: 10px; width: 100%; background: #cbd2e2; border-radius: 3px; margin: 7px 0; }
+.mini-line.short { width: 65%; }
+.mini-button { width: 50px; height: 15px; border-radius: 4px; background: var(--accent); margin-top: 13px; }
+.weather-card { display: grid; justify-items: center; color: white; }
+.weather-card span { font-size: 2.3rem; color: #ffcf68; }
+.weather-card strong { font: 700 2.4rem 'Poppins', sans-serif; }
+.weather-card small { color: #d0d9ef; }
+.todo-card { width: 190px; padding: 18px; background: #f5f4ff; color: #282b47; border-radius: 10px; box-shadow: 0 12px 25px #0003; }
+.todo-card b { display: block; margin-bottom: 10px; }
+.todo-card p { font-size: .78rem; padding: 5px 0; color: #525875; }
+.project-content { padding: 22px; }
+.project-type { color: var(--accent); font-size: .7rem; font-weight: 700; letter-spacing: 1.3px; margin-bottom: 7px; }
+.project-content h3 { font: 600 1.12rem 'Poppins', sans-serif; margin-bottom: 8px; }
+.project-content > p:not(.project-type) { font-size: .88rem; min-height: 75px; }
+.project-content a { display: inline-block; margin-top: 15px; font-size: .86rem; color: var(--accent); font-weight: 700; }
