@@ -121,6 +121,123 @@ nav .nav-contact { color: var(--text); border: 1px solid var(--border); padding:
 footer { width: min(1120px, 90%); margin: auto; padding: 24px 0 30px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; gap: 20px; color: #8491ac; font-size: .82rem; }
 footer a { color: var(--text); }
 
+
+/* Contact Form */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background: var(--panel);
+    color: var(--text);
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 14px;
+    background: #d4af37;
+    color: #0b1020;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #f0ca55;
+}
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+#col{
+  color: var(--accent);
+}
+.contact p {
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background: var(--panel);
+    color: var(--text);
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 14px;
+    background: #d4af37;
+    color: #0b1020;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #f0ca55;
+}
+
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 20px; padding-top: 45px; }
   .hero-art { min-height: 320px; }
